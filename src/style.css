@@ -1,0 +1,48 @@
+:root {
+    --primary: rgb(0, 90, 90);
+    --secondary: rgb(170, 110, 0);
+    --bg-primary: rgb(31, 31, 31);
+    --bg-secondary: rgb(30, 80, 30);
+    --text: rgb(200, 200, 180);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family: 'Apercu';
+	src: url('src/fonts/apercu-mono-regular.ttf');
+}
+
+html, body {
+    background-color: var(--bg-primary);
+    color: var(--text);
+    font-family: 'Apercu', monospace;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: var(--text);
+}
+
+a:hover {
+    color: var(--secondary);
+    transition: 0.5s;
+}
+
+.grid-4-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
